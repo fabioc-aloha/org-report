@@ -20,14 +20,14 @@ Copy or clone this folder into your Copilot CLI plugins directory:
 
 ```powershell
 # Windows
-git clone https://github.com/<owner>/org-report `
-  "$env:USERPROFILE\.copilot\installed-plugins\<owner>\org-report"
+git clone https://github.com/fabioc-aloha/org-report `
+  "$env:USERPROFILE\.copilot\installed-plugins\fabioc-aloha\org-report"
 ```
 
 ```bash
 # macOS / Linux
-git clone https://github.com/<owner>/org-report \
-  ~/.copilot/installed-plugins/<owner>/org-report
+git clone https://github.com/fabioc-aloha/org-report \
+  ~/.copilot/installed-plugins/fabioc-aloha/org-report
 ```
 
 Restart Copilot CLI. The `org-report` skill will auto-load.
@@ -38,7 +38,7 @@ The report is served through a canvas extension. Copy it once into your Copilot 
 
 ```powershell
 # Windows
-$src = "$env:USERPROFILE\.copilot\installed-plugins\<owner>\org-report\extensions\org-directory"
+$src = "$env:USERPROFILE\.copilot\installed-plugins\fabioc-aloha\org-report\extensions\org-directory"
 $dst = "$env:USERPROFILE\.copilot\extensions\org-directory"
 New-Item -ItemType Directory -Force -Path $dst | Out-Null
 Copy-Item "$src\*" $dst -Recurse -Force
@@ -48,7 +48,7 @@ New-Item -ItemType Directory -Force -Path "$dst\artifacts" | Out-Null
 ```bash
 # macOS / Linux
 mkdir -p ~/.copilot/extensions/org-directory/artifacts
-cp -r ~/.copilot/installed-plugins/<owner>/org-report/extensions/org-directory/* \
+cp -r ~/.copilot/installed-plugins/fabioc-aloha/org-report/extensions/org-directory/* \
       ~/.copilot/extensions/org-directory/
 ```
 
@@ -61,7 +61,7 @@ extensions_reload
 ### 3. Install Python dependencies
 
 ```powershell
-pip install -r "$env:USERPROFILE\.copilot\installed-plugins\<owner>\org-report\scripts\requirements.txt"
+pip install -r "$env:USERPROFILE\.copilot\installed-plugins\fabioc-aloha\org-report\scripts\requirements.txt"
 ```
 
 Microsoft Word is required on Windows for the PDF conversion step. On macOS use `docx2pdf` with the Word for Mac; on Linux swap in LibreOffice.
@@ -94,7 +94,7 @@ Expect the enrichment phase to take 10–30 minutes for a ~200-person org (WorkI
 If you edit `directory.json` by hand and just want to re-render:
 
 ```powershell
-python "$env:USERPROFILE\.copilot\installed-plugins\<owner>\org-report\scripts\export_org.py"
+python "$env:USERPROFILE\.copilot\installed-plugins\fabioc-aloha\org-report\scripts\export_org.py"
 ```
 
 CLI flags:
@@ -132,3 +132,4 @@ Adjust these paragraphs for your tenant, audience, or classification by editing 
 ## License
 
 MIT
+

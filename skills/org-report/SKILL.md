@@ -148,7 +148,7 @@ Run the export script. It reads `directory.json`, writes the DOCX and PDF, and
 copies them into the canvas extension's artifacts folder.
 
 ```powershell
-python <plugin>/scripts/export_org.py
+python ~/.copilot/installed-plugins/fabioc-aloha/org-report/scripts/export_org.py
 ```
 
 Optional flags:

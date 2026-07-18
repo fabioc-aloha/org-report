@@ -16,8 +16,8 @@ from docx.enum.table import WD_ALIGN_VERTICAL, WD_TABLE_ALIGNMENT
 from docx.oxml.ns import qn, nsmap
 from docx.oxml import OxmlElement
 
-_DEFAULT_STATE = os.path.expanduser(r"~\.copilot\extensions\org-directory\artifacts\directory.json")
-_DEFAULT_PDF   = os.path.expanduser(r"~\.copilot\extensions\org-directory\artifacts\report.pdf")
+_DEFAULT_STATE = os.path.expanduser(os.path.join("~", ".copilot", "extensions", "org-directory", "artifacts", "directory.json"))
+_DEFAULT_PDF   = os.path.expanduser(os.path.join("~", ".copilot", "extensions", "org-directory", "artifacts", "report.pdf"))
 
 _argp = argparse.ArgumentParser(description="Export org-directory state to DOCX + PDF")
 _argp.add_argument("--state", default=_DEFAULT_STATE, help="Path to directory.json state file")

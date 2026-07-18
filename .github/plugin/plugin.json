@@ -1,10 +1,14 @@
 {
+  "$schema": "https://json-schema.org/draft-07/schema",
   "name": "org-report",
   "version": "1.0.0",
   "description": "Generate executive organization briefs (leadership chain, direct reports, extended teams, and vendor partners) from Microsoft 365 signals using GitHub Copilot CLI + WorkIQ. Produces a polished Word + PDF report and displays it in a Copilot canvas.",
   "author": {
     "name": "Fabio Correa"
   },
+  "homepage": "https://github.com/fabioc-aloha/org-report",
+  "repository": "https://github.com/fabioc-aloha/org-report",
+  "license": "MIT",
   "keywords": [
     "org-chart",
     "organization",
@@ -14,6 +18,5 @@
     "docx",
     "canvas"
   ],
-  "license": "MIT",
   "skills": "./skills/"
 }
