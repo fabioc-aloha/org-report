@@ -1,0 +1,19 @@
+{
+  "name": "org-report",
+  "version": "1.0.0",
+  "description": "Generate executive organization briefs (leadership chain, direct reports, extended teams, and vendor partners) from Microsoft 365 signals using GitHub Copilot CLI + WorkIQ. Produces a polished Word + PDF report and displays it in a Copilot canvas.",
+  "author": {
+    "name": "Fabio Correa"
+  },
+  "keywords": [
+    "org-chart",
+    "organization",
+    "microsoft-365",
+    "workiq",
+    "reporting",
+    "docx",
+    "canvas"
+  ],
+  "license": "MIT",
+  "skills": "./skills/"
+}
